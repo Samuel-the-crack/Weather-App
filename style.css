@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#333533;
+    color: #D6D6D6;
+}
+
+form, #weather{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input[class='search']{
+    background-color: transparent;
+    color:#D6D6D6;
+    border: 0;
+    border-bottom: 2px solid #D6D6D6 ;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+input[type='text']:focus{
+    border-color: #FFEE32 ;
+    outline: 0;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+ul li{
+    background-color:#555955;
+    margin-top: 7.5px;
+    padding: 12.5px;
+    cursor: pointer;
+    border-radius: 7.5px;
+}
+
+ul li span{
+    color: #FFD100;
+    align-self: flex-end;
+}
+
+#city{
+    color: #FFD100;
+}
+
+button#change{
+    border: 2px solid #888;
+    background-color: transparent;
+    color: #D6D6D6;
+    padding: 5px 10px;
+    margin-top: 12.5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+div#info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: 17.5px;
+}
+
+div#info h3{
+    font-size: .9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+div.value{
+    font-size: 1.5rem;
+    color: #FFEE32;
+}
+div#info span.value{
+    font-size: .8rem;
+    color :#D6D6D6
+}

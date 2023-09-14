@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Search City" class="search">
+        <ul class="locList">
+            
+        </ul>
+    </form>
+    <div id="weather" style="display: none;">
+        <img src="" alt="" id="iconValue">
+        <h1 id="temper">20&deg;C</h1>
+        <h2 id="city">Stockholm</h2>
+        <button id="change">Change City</button>
+        <div id="info">
+            <div>
+                <h3>Wind</h3>
+                <div id="windValue" class="value">2<span class="value">km/h</span></div>
+            </div>
+            <div>
+                <h3>Feels Like</h3>
+                <div id="feelsLikeValue" class="value">2<span class="value">km/h</span></div>
+            </div>
+            <div>
+                <h3>Humidity</h3>
+                <div id="humidityValue" class="value">2<span class="value">km/h</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</html>
